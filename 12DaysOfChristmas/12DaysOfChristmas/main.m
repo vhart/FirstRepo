@@ -10,7 +10,7 @@
 
 void PrintLyrics(int a, NSArray *array, NSString *print){
     if (a < 0) {
-        NSLog (@"%@",print);
+        NSLog (@"%@----------------",print);
         return ;
     }
     else {
@@ -31,11 +31,11 @@ int main(int argc, const char * argv[]) {
         for (int i=0; i < 12; i++){
         
             if(i == 0){
-                NSLog(@"On the First day of Christmas my true love gave to me \n a Partridge in a pear tree");
+                NSLog(@"\n----------------\nOn the First day of Christmas my true love gave to me \na Partridge in a pear tree\n----------------");
             }
             else{
-                NSLog(@"On the %@ day of Christmas my true love game to me", [day objectAtIndex:(i-1)]);
-                PrintLyrics(i, giftDays,@"");
+                NSString *seq= ([[[@"\n----------------\nOn the " stringByAppendingString:[day objectAtIndex:(i-1)]] stringByAppendingString:@" day of Christmas my true love gave to me"]stringByAppendingString:@"\n"]);
+                PrintLyrics(i, giftDays, seq);
         }
         }
     }
