@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Hello, World!");
         NSArray *day = ([NSArray arrayWithObjects:@"Second", @"Third", @"Fourth", @"Fifth", @"Sixth", @"Seventh", @"Eighth", @"Ninth", @"Tenth", @"Eleventh", @"Twelfth",nil]);
         
-        NSArray *giftDays =([NSArray arrayWithObjects:@"and a Partridge in a pear tree", @"Two turtle doves", @"Three french hens",@"Four calling birds",@"Five gold rings",@"Six geese a laying",@"Seven swans a swimming",@"Eight maids a milking",@"Nine ladies Dancing",@"Ten lords a leaping",@"Eleven pipers piping",@"Twelve drummers drumming",@"On the %@ day of Christmas my true love gave to me", nil]);
+        NSArray *giftDays =([NSArray arrayWithObjects:@"and a Partridge in a pear tree", @"Two turtle doves", @"Three french hens",@"Four calling birds",@"Five gold rings",@"Six geese a laying",@"Seven swans a swimming",@"Eight maids a milking",@"Nine ladies Dancing",@"Ten lords a leaping",@"Eleven pipers piping",@"Twelve drummers drumming", nil]);
         for (int i=0; i < 12; i++){
         
             if(i == 0){
