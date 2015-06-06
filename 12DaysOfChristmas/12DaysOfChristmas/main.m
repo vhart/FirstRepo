@@ -36,7 +36,7 @@ int main(int argc, const char * argv[]) {
             else{
                 NSString *seq= ([[[@"\n----------------\nOn the " stringByAppendingString:[day objectAtIndex:(i-1)]] stringByAppendingString:@" day of Christmas my true love gave to me"]stringByAppendingString:@"\n"]);
                 PrintLyrics(i, giftDays, seq);
-        }
+            }
         }
     }
     return 0;
